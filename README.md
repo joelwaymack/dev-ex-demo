@@ -1,8 +1,8 @@
 # Developer Experience Demo
 
 <div align="center">
-<img src="./assets/azure_logo.png" alt="Azure Logo" width="100" />
-<img src="./assets/github_logo.png" alt="GitHub Logo" width="100" />
+<img src="./.assets/azure_logo.png" alt="Azure Logo" width="100" />
+<img src="./.assets/github_logo.png" alt="GitHub Logo" width="100" />
 </div>
 
 This repo is used to demonstrate GitHub Advanced Security, GitHub CodeSpaces, GitHub Projects and Issues, and GitHub Actions.
