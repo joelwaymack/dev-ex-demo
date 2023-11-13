@@ -1,5 +1,7 @@
-const express = require('express');
-const orderController = require('./controllers/OrderController');
+import express from 'express';
+import defaultController from './controllers/DefaultController.js';
+import orderController from './controllers/OrderController.js';
+import 'dotenv/config';
 
 const app = express();
 app.use(express.json());
@@ -10,4 +12,5 @@ app.listen(PORT, () => {
   console.log("Server Listening on port: ", PORT);
 });
 
+app.use('/', defaultController);
 app.use('/orders', orderController);

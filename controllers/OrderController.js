@@ -1,23 +1,18 @@
-const router = require('express').Router();
+import express from 'express';
+import { getOrders, getOrderById, getOrderSummary } from '../data/Data.js';
 
-router.get('/', (request, response) => {
-    response.send('get orders');
+const router = express.Router();
+
+router.get('/', async (request, response) => {
+    response.json(await getOrders());
 });
 
-router.get('/:id', (request, response) => {
-    response.send('get order by id ' + request.params.id);
+router.get('/summary', async (request, response) => {
+    response.json(await getOrderSummary());
 });
 
-router.post('/', (request, response) => {
-    response.send('create order');
+router.get('/:id', async (request, response) => {
+    response.json(await getOrderById(request.params.id));
 });
 
-router.put('/:id', (request, response) => {
-    response.send('update order by id ' + request.params.id);
-});
-
-router.delete('/:id', (request, response) => {
-    response.send('delete order by id ' + request.params.id);
-});
-
-module.exports = router;
+export default router;
