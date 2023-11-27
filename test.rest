@@ -1,0 +1,17 @@
+### Get all orders
+GET http://localhost:3000/orders
+
+### Get order summary
+GET http://localhost:3000/orders/summary
+
+### Get single order
+GET http://localhost:3000/orders/1
+
+### Create order
+POST http://localhost:3000/orders
+
+{
+    "name": "Shake",
+    "price": 5.68,
+    "quantity": 2
+}
