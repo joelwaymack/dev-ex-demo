@@ -21,7 +21,9 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"database-client.com"
+				"cweijan.vscode-postgresql-client2",
+				"github.copilot",
+				"github.copilot-chat"
 			]
 		}
 	}
