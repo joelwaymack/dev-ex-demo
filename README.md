@@ -9,5 +9,6 @@ This repo is used to demonstrate GitHub Advanced Security, GitHub CodeSpaces, Gi
 
 ## Setup
 
-1. Fork the repository.
+1. Create a new repo from this template.
 1. [Enable Dependabot for your Repository](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide#enabling-dependabot-for-your-repository)
+2. Set up a project board using the team template.
